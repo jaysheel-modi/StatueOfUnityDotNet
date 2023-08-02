@@ -1,5 +1,5 @@
 # StatueOfUnityDotNet
-
+The code allows users to book event tickets through a WPF application. It checks if users are registered to provide a discount and enable registration through the "Register" button. The application stores booking details and registered users' email addresses in a SQL Server database. The XAML defines the UI, and the code handles user interactions and data operations.
 ## Database:
 
 1.  The database is named "RegisteredUserDB" and contains two tables: "TicketBooking" and "RegisteredUser."
