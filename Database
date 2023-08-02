@@ -1,0 +1,36 @@
+## Database
+
+There will be two tables "RegisteredUser" and "TicketBooking"
+
+1. Steps to create databse 
+-- Go To server and open "New Query" and run the following command.
+
+CREATE DATABASE RegisteredUserDB;
+GO
+
+USE RegisteredUserDB;
+GO
+
+
+CREATE TABLE TicketBooking (
+    TicketID INT PRIMARY KEY IDENTITY(1,1),
+    Name NVARCHAR(100) NOT NULL,
+    Mobile NVARCHAR(20) NOT NULL,
+    Email NVARCHAR(100) NOT NULL,
+    NumberOfTickets INT NOT NULL,
+    TotalAmount DECIMAL(18, 2) NOT NULL
+);
+
+CREATE TABLE RegisteredUser (
+    Email NVARCHAR(100) PRIMARY KEY
+);
+
+
+2. Apply Security login 
+
+-- Go To security >> New login >> sql server auth >> enter login name and pass 
+--uncheck enforce password policy
+--Go to user mapping in the same, select databse and also select db_owner option.
+--Then go back to general and hit OK.
+-- Disconnect and connect agaon with the same login/pass.
+
