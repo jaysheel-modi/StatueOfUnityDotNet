@@ -26,6 +26,8 @@ The code allows users to book event tickets through a WPF application. It checks
 5. The "Book Tickets" button records the user's ticket booking details and calculates the total amount with or without a discount.
 6. Appropriate messages are displayed to the user based on their registration status and the total amount.
 
+## Component-oriented programming 
+
 
 
 
